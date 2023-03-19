@@ -1,0 +1,12 @@
+Using functions from standard library
+============= TIMES ===============
+Real time: 0.010000
+User time: 0.000000
+System time: 0.000000
+
+Using system functions
+============= TIMES ===============
+Real time: 0.000000
+User time: 0.000000
+System time: 0.000000
+

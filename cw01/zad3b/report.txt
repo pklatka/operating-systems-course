@@ -1,0 +1,800 @@
+================================================================================
+results_static_O1.txt
+Komentarz: Program oparty na bibliotece statycznej, skompilowany z flagą -O1,
+           wykonał komendy testowe w 0.03s. Najwięcej czasu zajęły komendy związane
+           z zapisywaniem danych do struktury i wykonaniem komendy wc.
+
+Welcome to the REPL
+Available commands:
+init <size> - initialize structure with size <size>
+count <path> - count words in file <path>
+show <index> - show result of counting words at index <index>
+delete <index> - delete result of counting words at index <index>
+exit - close REPL
+help - show available commands
+Initialized structure with size 3
+============= TIMES ===============
+Real time: 0.000000
+User time: 0.000000
+System time: 0.000000
+
+Counting process completed. Record saved at index 0
+============= TIMES ===============
+Real time: 0.020000
+User time: 0.000000
+System time: 0.000000
+
+Counting process completed. Record saved at index 1
+============= TIMES ===============
+Real time: 0.010000
+User time: 0.000000
+System time: 0.000000
+
+Counting process completed. Record saved at index 2
+============= TIMES ===============
+Real time: 0.000000
+User time: 0.000000
+System time: 0.000000
+
+     175     628    4258 ../zad1/wc.c
+
+============= TIMES ===============
+Real time: 0.000000
+User time: 0.000000
+System time: 0.000000
+
+      18      41     348 ../zad1/wc.h
+
+============= TIMES ===============
+Real time: 0.000000
+User time: 0.000000
+System time: 0.000000
+
+     336     919    9365 ../zad2/repl.c
+
+============= TIMES ===============
+Real time: 0.000000
+User time: 0.000000
+System time: 0.000000
+
+Deleted element at index 0
+============= TIMES ===============
+Real time: 0.000000
+User time: 0.000000
+System time: 0.000000
+
+Deleted element at index 1
+============= TIMES ===============
+Real time: 0.000000
+User time: 0.000000
+System time: 0.000000
+
+Deleted element at index 2
+============= TIMES ===============
+Real time: 0.000000
+User time: 0.000000
+System time: 0.000000
+
+Structure destroyed
+============= TIMES ===============
+Real time: 0.000000
+User time: 0.000000
+System time: 0.000000
+
+========== PROGRAM RUNNING TIME=========
+Real time: 0.030000
+User time: 0.000000
+System time: 0.000000
+
+
+================================================================================
+results_static_O2.txt
+Komentarz: Program oparty na bibliotece statycznej, skompilowany z flagą -O2,
+           wykonał komendy testowe w 0.03s, tyle samo co z flagą -O1. Najwięcej czasu zajęły komendy związane
+           z zapisywaniem danych do struktury i wykonaniem komendy wc.
+
+Welcome to the REPL
+Available commands:
+init <size> - initialize structure with size <size>
+count <path> - count words in file <path>
+show <index> - show result of counting words at index <index>
+delete <index> - delete result of counting words at index <index>
+exit - close REPL
+help - show available commands
+Initialized structure with size 3
+============= TIMES ===============
+Real time: 0.000000
+User time: 0.000000
+System time: 0.000000
+
+Counting process completed. Record saved at index 0
+============= TIMES ===============
+Real time: 0.010000
+User time: 0.000000
+System time: 0.000000
+
+Counting process completed. Record saved at index 1
+============= TIMES ===============
+Real time: 0.010000
+User time: 0.000000
+System time: 0.000000
+
+Counting process completed. Record saved at index 2
+============= TIMES ===============
+Real time: 0.010000
+User time: 0.000000
+System time: 0.000000
+
+     175     628    4258 ../zad1/wc.c
+
+============= TIMES ===============
+Real time: 0.000000
+User time: 0.000000
+System time: 0.000000
+
+      18      41     348 ../zad1/wc.h
+
+============= TIMES ===============
+Real time: 0.000000
+User time: 0.000000
+System time: 0.000000
+
+     336     919    9365 ../zad2/repl.c
+
+============= TIMES ===============
+Real time: 0.000000
+User time: 0.000000
+System time: 0.000000
+
+Deleted element at index 0
+============= TIMES ===============
+Real time: 0.000000
+User time: 0.000000
+System time: 0.000000
+
+Deleted element at index 1
+============= TIMES ===============
+Real time: 0.000000
+User time: 0.000000
+System time: 0.000000
+
+Deleted element at index 2
+============= TIMES ===============
+Real time: 0.000000
+User time: 0.000000
+System time: 0.000000
+
+Structure destroyed
+============= TIMES ===============
+Real time: 0.000000
+User time: 0.000000
+System time: 0.000000
+
+========== PROGRAM RUNNING TIME=========
+Real time: 0.030000
+User time: 0.000000
+System time: 0.000000
+
+
+================================================================================
+results_static_O3.txt
+Komentarz: Program oparty na bibliotece statycznej, skompilowany z flagą -O3,
+           wykonał komendy testowe w 0.02s, czyli najszybciej ze wszystkich flag dla biblioteki statycznej (oraz
+           najszybciej ze wszystkich testów). Najwięcej czasu zajęły komendy związane z zapisywaniem danych do
+           struktury i wykonaniem komendy wc.
+
+Welcome to the REPL
+Available commands:
+init <size> - initialize structure with size <size>
+count <path> - count words in file <path>
+show <index> - show result of counting words at index <index>
+delete <index> - delete result of counting words at index <index>
+exit - close REPL
+help - show available commands
+Initialized structure with size 3
+============= TIMES ===============
+Real time: 0.000000
+User time: 0.000000
+System time: 0.000000
+
+Counting process completed. Record saved at index 0
+============= TIMES ===============
+Real time: 0.010000
+User time: 0.000000
+System time: 0.000000
+
+Counting process completed. Record saved at index 1
+============= TIMES ===============
+Real time: 0.010000
+User time: 0.000000
+System time: 0.000000
+
+Counting process completed. Record saved at index 2
+============= TIMES ===============
+Real time: 0.000000
+User time: 0.000000
+System time: 0.000000
+
+     175     628    4258 ../zad1/wc.c
+
+============= TIMES ===============
+Real time: 0.000000
+User time: 0.000000
+System time: 0.000000
+
+      18      41     348 ../zad1/wc.h
+
+============= TIMES ===============
+Real time: 0.000000
+User time: 0.000000
+System time: 0.000000
+
+     336     919    9365 ../zad2/repl.c
+
+============= TIMES ===============
+Real time: 0.000000
+User time: 0.000000
+System time: 0.000000
+
+Deleted element at index 0
+============= TIMES ===============
+Real time: 0.000000
+User time: 0.000000
+System time: 0.000000
+
+Deleted element at index 1
+============= TIMES ===============
+Real time: 0.000000
+User time: 0.000000
+System time: 0.000000
+
+Deleted element at index 2
+============= TIMES ===============
+Real time: 0.000000
+User time: 0.000000
+System time: 0.000000
+
+Structure destroyed
+============= TIMES ===============
+Real time: 0.000000
+User time: 0.000000
+System time: 0.000000
+
+========== PROGRAM RUNNING TIME=========
+Real time: 0.020000
+User time: 0.000000
+System time: 0.000000
+
+
+================================================================================
+results_shared_O1.txt
+Komentarz: Program oparty na bibliotece współdzielonej, skompilowany z flagą -O1,
+           wykonał komendy testowe w 0.04s. Najwięcej czasu zajęły komendy związane
+           z zapisywaniem danych do struktury i wykonaniem komendy wc.
+
+Welcome to the REPL
+Available commands:
+init <size> - initialize structure with size <size>
+count <path> - count words in file <path>
+show <index> - show result of counting words at index <index>
+delete <index> - delete result of counting words at index <index>
+exit - close REPL
+help - show available commands
+Initialized structure with size 3
+============= TIMES ===============
+Real time: 0.000000
+User time: 0.000000
+System time: 0.000000
+
+Counting process completed. Record saved at index 0
+============= TIMES ===============
+Real time: 0.020000
+User time: 0.000000
+System time: 0.000000
+
+Counting process completed. Record saved at index 1
+============= TIMES ===============
+Real time: 0.010000
+User time: 0.000000
+System time: 0.000000
+
+Counting process completed. Record saved at index 2
+============= TIMES ===============
+Real time: 0.010000
+User time: 0.000000
+System time: 0.000000
+
+     175     628    4258 ../zad1/wc.c
+
+============= TIMES ===============
+Real time: 0.000000
+User time: 0.000000
+System time: 0.000000
+
+      18      41     348 ../zad1/wc.h
+
+============= TIMES ===============
+Real time: 0.000000
+User time: 0.000000
+System time: 0.000000
+
+     336     919    9365 ../zad2/repl.c
+
+============= TIMES ===============
+Real time: 0.000000
+User time: 0.000000
+System time: 0.000000
+
+Deleted element at index 0
+============= TIMES ===============
+Real time: 0.000000
+User time: 0.000000
+System time: 0.000000
+
+Deleted element at index 1
+============= TIMES ===============
+Real time: 0.000000
+User time: 0.000000
+System time: 0.000000
+
+Deleted element at index 2
+============= TIMES ===============
+Real time: 0.000000
+User time: 0.000000
+System time: 0.000000
+
+Structure destroyed
+============= TIMES ===============
+Real time: 0.000000
+User time: 0.000000
+System time: 0.000000
+
+========== PROGRAM RUNNING TIME=========
+Real time: 0.040000
+User time: 0.000000
+System time: 0.000000
+
+
+================================================================================
+results_shared_O2.txt
+Komentarz: Program oparty na bibliotece współdzielonej, skompilowany z flagą -O2,
+           wykonał komendy testowe w 0.03s, szybciej niż z flagą -O1. Najwięcej czasu zajęły komendy związane
+           z zapisywaniem danych do struktury i wykonaniem komendy wc.
+
+Welcome to the REPL
+Available commands:
+init <size> - initialize structure with size <size>
+count <path> - count words in file <path>
+show <index> - show result of counting words at index <index>
+delete <index> - delete result of counting words at index <index>
+exit - close REPL
+help - show available commands
+Initialized structure with size 3
+============= TIMES ===============
+Real time: 0.000000
+User time: 0.000000
+System time: 0.000000
+
+Counting process completed. Record saved at index 0
+============= TIMES ===============
+Real time: 0.010000
+User time: 0.000000
+System time: 0.000000
+
+Counting process completed. Record saved at index 1
+============= TIMES ===============
+Real time: 0.020000
+User time: 0.000000
+System time: 0.000000
+
+Counting process completed. Record saved at index 2
+============= TIMES ===============
+Real time: 0.000000
+User time: 0.000000
+System time: 0.000000
+
+     175     628    4258 ../zad1/wc.c
+
+============= TIMES ===============
+Real time: 0.000000
+User time: 0.000000
+System time: 0.000000
+
+      18      41     348 ../zad1/wc.h
+
+============= TIMES ===============
+Real time: 0.000000
+User time: 0.000000
+System time: 0.000000
+
+     336     919    9365 ../zad2/repl.c
+
+============= TIMES ===============
+Real time: 0.000000
+User time: 0.000000
+System time: 0.000000
+
+Deleted element at index 0
+============= TIMES ===============
+Real time: 0.000000
+User time: 0.000000
+System time: 0.000000
+
+Deleted element at index 1
+============= TIMES ===============
+Real time: 0.000000
+User time: 0.000000
+System time: 0.000000
+
+Deleted element at index 2
+============= TIMES ===============
+Real time: 0.000000
+User time: 0.000000
+System time: 0.000000
+
+Structure destroyed
+============= TIMES ===============
+Real time: 0.000000
+User time: 0.000000
+System time: 0.000000
+
+========== PROGRAM RUNNING TIME=========
+Real time: 0.030000
+User time: 0.000000
+System time: 0.000000
+
+
+================================================================================
+results_shared_O3.txt
+Komentarz: Program oparty na bibliotece współdzielonej, skompilowany z flagą -O3,
+           wykonał komendy testowe w 0.03s, tyle samo co z flagą -O2. Najwięcej czasu zajęły komendy związane
+           z zapisywaniem danych do struktury i wykonaniem komendy wc.
+
+Welcome to the REPL
+Available commands:
+init <size> - initialize structure with size <size>
+count <path> - count words in file <path>
+show <index> - show result of counting words at index <index>
+delete <index> - delete result of counting words at index <index>
+exit - close REPL
+help - show available commands
+Initialized structure with size 3
+============= TIMES ===============
+Real time: 0.000000
+User time: 0.000000
+System time: 0.000000
+
+Counting process completed. Record saved at index 0
+============= TIMES ===============
+Real time: 0.010000
+User time: 0.000000
+System time: 0.000000
+
+Counting process completed. Record saved at index 1
+============= TIMES ===============
+Real time: 0.020000
+User time: 0.000000
+System time: 0.000000
+
+Counting process completed. Record saved at index 2
+============= TIMES ===============
+Real time: 0.000000
+User time: 0.000000
+System time: 0.000000
+
+     175     628    4258 ../zad1/wc.c
+
+============= TIMES ===============
+Real time: 0.000000
+User time: 0.000000
+System time: 0.000000
+
+      18      41     348 ../zad1/wc.h
+
+============= TIMES ===============
+Real time: 0.000000
+User time: 0.000000
+System time: 0.000000
+
+     336     919    9365 ../zad2/repl.c
+
+============= TIMES ===============
+Real time: 0.000000
+User time: 0.000000
+System time: 0.000000
+
+Deleted element at index 0
+============= TIMES ===============
+Real time: 0.000000
+User time: 0.000000
+System time: 0.000000
+
+Deleted element at index 1
+============= TIMES ===============
+Real time: 0.000000
+User time: 0.000000
+System time: 0.000000
+
+Deleted element at index 2
+============= TIMES ===============
+Real time: 0.000000
+User time: 0.000000
+System time: 0.000000
+
+Structure destroyed
+============= TIMES ===============
+Real time: 0.000000
+User time: 0.000000
+System time: 0.000000
+
+========== PROGRAM RUNNING TIME=========
+Real time: 0.030000
+User time: 0.000000
+System time: 0.000000
+
+
+================================================================================
+results_dynamic_O1.txt
+Komentarz: Program oparty na bibliotece dynamicznej, skompilowany z flagą -O1,
+           wykonał komendy testowe w 0.14s. Najwięcej czasu zajęły komendy związane
+           z zapisywaniem danych do struktury i wykonaniem komendy wc.
+
+Welcome to the REPL
+Available commands:
+init <size> - initialize structure with size <size>
+count <path> - count words in file <path>
+show <index> - show result of counting words at index <index>
+delete <index> - delete result of counting words at index <index>
+exit - close REPL
+help - show available commands
+Initialized structure with size 3
+============= TIMES ===============
+Real time: 0.000000
+User time: 0.000000
+System time: 0.000000
+
+Counting process completed. Record saved at index 0
+============= TIMES ===============
+Real time: 0.010000
+User time: 0.000000
+System time: 0.000000
+
+Counting process completed. Record saved at index 1
+============= TIMES ===============
+Real time: 0.020000
+User time: 0.000000
+System time: 0.000000
+
+Counting process completed. Record saved at index 2
+============= TIMES ===============
+Real time: 0.000000
+User time: 0.000000
+System time: 0.000000
+
+     175     628    4258 ../zad1/wc.c
+
+============= TIMES ===============
+Real time: 0.000000
+User time: 0.000000
+System time: 0.000000
+
+      18      41     348 ../zad1/wc.h
+
+============= TIMES ===============
+Real time: 0.000000
+User time: 0.000000
+System time: 0.000000
+
+     336     919    9365 ../zad2/repl.c
+
+============= TIMES ===============
+Real time: 0.000000
+User time: 0.000000
+System time: 0.000000
+
+Deleted element at index 0
+============= TIMES ===============
+Real time: 0.000000
+User time: 0.000000
+System time: 0.000000
+
+Deleted element at index 1
+============= TIMES ===============
+Real time: 0.000000
+User time: 0.000000
+System time: 0.000000
+
+Deleted element at index 2
+============= TIMES ===============
+Real time: 0.000000
+User time: 0.000000
+System time: 0.000000
+
+Structure destroyed
+============= TIMES ===============
+Real time: 0.000000
+User time: 0.000000
+System time: 0.000000
+
+========== PROGRAM RUNNING TIME=========
+Real time: 0.140000
+User time: 0.000000
+System time: 0.000000
+
+
+================================================================================
+results_dynamic_O2.txt
+Komentarz: Program oparty na bibliotece dynamicznej, skompilowany z flagą -O2,
+           wykonał komendy testowe w 0.24s, wolniej niż z flagą -O1 czy -O3. Najwięcej czasu zajęły komendy związane
+           z zapisywaniem danych do struktury i wykonaniem komendy wc.
+
+Welcome to the REPL
+Available commands:
+init <size> - initialize structure with size <size>
+count <path> - count words in file <path>
+show <index> - show result of counting words at index <index>
+delete <index> - delete result of counting words at index <index>
+exit - close REPL
+help - show available commands
+Initialized structure with size 3
+============= TIMES ===============
+Real time: 0.000000
+User time: 0.000000
+System time: 0.000000
+
+Counting process completed. Record saved at index 0
+============= TIMES ===============
+Real time: 0.010000
+User time: 0.000000
+System time: 0.000000
+
+Counting process completed. Record saved at index 1
+============= TIMES ===============
+Real time: 0.020000
+User time: 0.000000
+System time: 0.000000
+
+Counting process completed. Record saved at index 2
+============= TIMES ===============
+Real time: 0.000000
+User time: 0.000000
+System time: 0.000000
+
+     175     628    4258 ../zad1/wc.c
+
+============= TIMES ===============
+Real time: 0.000000
+User time: 0.000000
+System time: 0.000000
+
+      18      41     348 ../zad1/wc.h
+
+============= TIMES ===============
+Real time: 0.000000
+User time: 0.000000
+System time: 0.000000
+
+     336     919    9365 ../zad2/repl.c
+
+============= TIMES ===============
+Real time: 0.000000
+User time: 0.000000
+System time: 0.000000
+
+Deleted element at index 0
+============= TIMES ===============
+Real time: 0.000000
+User time: 0.000000
+System time: 0.000000
+
+Deleted element at index 1
+============= TIMES ===============
+Real time: 0.000000
+User time: 0.000000
+System time: 0.000000
+
+Deleted element at index 2
+============= TIMES ===============
+Real time: 0.000000
+User time: 0.000000
+System time: 0.000000
+
+Structure destroyed
+============= TIMES ===============
+Real time: 0.000000
+User time: 0.000000
+System time: 0.000000
+
+========== PROGRAM RUNNING TIME=========
+Real time: 0.240000
+User time: 0.000000
+System time: 0.000000
+
+
+================================================================================
+results_dynamic_O3.txt
+Komentarz: Program oparty na bibliotece dynamicznej, skompilowany z flagą -O3,
+           wykonał komendy testowe w 0.13s, najszybciej z flag korzystanych podczas kompilacji bibliotek dynamicznych.
+           Najwięcej czasu zajęły komendy związane z zapisywaniem danych do struktury i wykonaniem komendy wc.
+
+Welcome to the REPL
+Available commands:
+init <size> - initialize structure with size <size>
+count <path> - count words in file <path>
+show <index> - show result of counting words at index <index>
+delete <index> - delete result of counting words at index <index>
+exit - close REPL
+help - show available commands
+Initialized structure with size 3
+============= TIMES ===============
+Real time: 0.000000
+User time: 0.000000
+System time: 0.000000
+
+Counting process completed. Record saved at index 0
+============= TIMES ===============
+Real time: 0.020000
+User time: 0.000000
+System time: 0.000000
+
+Counting process completed. Record saved at index 1
+============= TIMES ===============
+Real time: 0.010000
+User time: 0.000000
+System time: 0.000000
+
+Counting process completed. Record saved at index 2
+============= TIMES ===============
+Real time: 0.010000
+User time: 0.000000
+System time: 0.000000
+
+     175     628    4258 ../zad1/wc.c
+
+============= TIMES ===============
+Real time: 0.000000
+User time: 0.000000
+System time: 0.000000
+
+      18      41     348 ../zad1/wc.h
+
+============= TIMES ===============
+Real time: 0.000000
+User time: 0.000000
+System time: 0.000000
+
+     336     919    9365 ../zad2/repl.c
+
+============= TIMES ===============
+Real time: 0.000000
+User time: 0.000000
+System time: 0.000000
+
+Deleted element at index 0
+============= TIMES ===============
+Real time: 0.000000
+User time: 0.000000
+System time: 0.000000
+
+Deleted element at index 1
+============= TIMES ===============
+Real time: 0.000000
+User time: 0.000000
+System time: 0.000000
+
+Deleted element at index 2
+============= TIMES ===============
+Real time: 0.000000
+User time: 0.000000
+System time: 0.000000
+
+Structure destroyed
+============= TIMES ===============
+Real time: 0.000000
+User time: 0.000000
+System time: 0.000000
+
+========== PROGRAM RUNNING TIME=========
+Real time: 0.130000
+User time: 0.000000
+System time: 0.000000

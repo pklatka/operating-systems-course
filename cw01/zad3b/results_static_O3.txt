@@ -1,0 +1,81 @@
+Welcome to the REPL
+Available commands:
+init <size> - initialize structure with size <size>
+count <path> - count words in file <path>
+show <index> - show result of counting words at index <index>
+delete <index> - delete result of counting words at index <index>
+exit - close REPL
+help - show available commands
+Initialized structure with size 3
+============= TIMES ===============
+Real time: 0.000000
+User time: 0.000000
+System time: 0.000000
+
+Counting process completed. Record saved at index 0
+============= TIMES ===============
+Real time: 0.010000
+User time: 0.000000
+System time: 0.000000
+
+Counting process completed. Record saved at index 1
+============= TIMES ===============
+Real time: 0.010000
+User time: 0.000000
+System time: 0.000000
+
+Counting process completed. Record saved at index 2
+============= TIMES ===============
+Real time: 0.000000
+User time: 0.000000
+System time: 0.000000
+
+     175     628    4258 ../zad1/wc.c
+
+============= TIMES ===============
+Real time: 0.000000
+User time: 0.000000
+System time: 0.000000
+
+      18      41     348 ../zad1/wc.h
+
+============= TIMES ===============
+Real time: 0.000000
+User time: 0.000000
+System time: 0.000000
+
+     336     919    9365 ../zad2/repl.c
+
+============= TIMES ===============
+Real time: 0.000000
+User time: 0.000000
+System time: 0.000000
+
+Deleted element at index 0
+============= TIMES ===============
+Real time: 0.000000
+User time: 0.000000
+System time: 0.000000
+
+Deleted element at index 1
+============= TIMES ===============
+Real time: 0.000000
+User time: 0.000000
+System time: 0.000000
+
+Deleted element at index 2
+============= TIMES ===============
+Real time: 0.000000
+User time: 0.000000
+System time: 0.000000
+
+Structure destroyed
+============= TIMES ===============
+Real time: 0.000000
+User time: 0.000000
+System time: 0.000000
+
+========== PROGRAM RUNNING TIME=========
+Real time: 0.020000
+User time: 0.000000
+System time: 0.000000

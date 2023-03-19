@@ -1,0 +1,12 @@
+Reading by one char...
+============= TIMES ===============
+Real time: 0.090000
+User time: 0.030000
+System time: 0.030000
+
+Reading by blocks...
+============= TIMES ===============
+Real time: 0.010000
+User time: 0.000000
+System time: 0.000000
+
