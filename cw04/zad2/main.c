@@ -14,25 +14,29 @@ void siginfo_handler(int signum, siginfo_t *info, void *ucontext)
     fprintf(stdout, "User time consumed: %ld\n----------------------\n", info->si_utime);
 }
 
-void test_siginfo()
+void test_siginfo(int skip_no_sigaction)
 {
     fprintf(stdout, "-----Testing SA_SIGINFO-----\n");
-
     struct sigaction sig;
     sig.sa_sigaction = siginfo_handler;
     sig.sa_flags = 0;
     sigemptyset(&sig.sa_mask);
 
-    if (sigaction(SIGINT, &sig, NULL) < 0)
+    if (!skip_no_sigaction)
     {
-        perror("Sigaction error");
-        exit(1);
+
+        if (sigaction(SIGINT, &sig, NULL) < 0)
+        {
+            perror("Sigaction error");
+            exit(1);
+        }
+
+        fprintf(stdout, "Sending SIGINT to %d\n", getpid());
+        fprintf(stdout, "WARNING: this can throw segfault. If it does, change method flag.\n");
+        raise(SIGINT);
     }
 
-    fprintf(stderr, "Sending SIGINT to %d\n", getpid());
-    raise(SIGINT);
-
-    fprintf(stderr, "Sending SIGINT to %d after setting SA_SIGINFO\n", getpid());
+    fprintf(stdout, "Sending SIGINT to %d after setting SA_SIGINFO\n", getpid());
     sig.sa_flags = SA_SIGINFO;
     if (sigaction(SIGINT, &sig, NULL) < 0)
     {
@@ -56,17 +60,17 @@ void test_resethand()
     sig.sa_sigaction = resethand_handler;
     sig.sa_flags = SA_RESETHAND;
     sigemptyset(&sig.sa_mask);
-    if (sigaction(SIGUSR1, &sig, NULL) < 0)
+    if (sigaction(SIGURG, &sig, NULL) < 0)
     {
         perror("Sigaction error");
         exit(1);
     }
 
-    fprintf(stderr, "Expecting handler execution\n");
-    raise(SIGUSR1);
+    fprintf(stdout, "Expecting handler execution\n");
+    raise(SIGURG);
 
-    fprintf(stderr, "Expecting program termination\n");
-    raise(SIGUSR1);
+    fprintf(stdout, "Expecting SIGURG default action (ignored)\n");
+    raise(SIGURG);
 }
 
 int call_depth = 0;
@@ -104,7 +108,8 @@ void test_nodefer()
 int main(int argc, char **argv)
 {
 
-    test_siginfo();
+    test_siginfo(0);
+    // test_siginfo(1); // Uncomment if above function throws segfault
 
     test_nodefer();
 
