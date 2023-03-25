@@ -1,0 +1,50 @@
+Wnioski:
+
+Dla fork:
+    - Ignorowanie sygnałów jest dziedziczone
+    - Handlery są dziedziczone
+    - Maski są dziedziczone
+    - Procesy oczekujące nie są dziedziczone
+
+Dla exec*:
+    - Ignorowanie sygnałów jest dziedziczone
+    - Maski są dziedziczone
+    - Procesy oczekujące są dziedziczone
+
+
+Podsumowując, ponieważ funkcje z grupy exec* nie zmieniają pid procesu tylko "czyszczą" proces i wykonują inny kod na nowo, zachowuje wszystkie stany procesu. Gdy tworzymy proces potomny, jedynie procesy oczekujące nie są dziedziczone, co jest logiczne, ponieważ jaki miałby sens dziedziczenia procesu oczekującego z rodzica, skoro dany sygnał powinien dotyczyć tylko konkretnego, jednego procesu.
+
+
+Wnioski wyciągnięte na podstawie poniższych danych:
+
+./fork_inheritance "ignore"
+Raising signal in main process 70087
+Raising signal in child 70088
+./fork_inheritance "handler"
+Raising signal in main process 70090
+Received signal 10 from 70090
+Raising signal in child 70091
+Received signal 10 from 70091
+./fork_inheritance "mask"
+Raising signal in main process 70093
+Signal is pending, 70093
+Raising signal in child 70094
+Signal is pending, 70094
+./fork_inheritance "pending"
+Raising signal in main process 70096
+Signal is pending, 70096
+Signal is not pending, 70097
+
+./exec_inheritance "ignore"
+Raising signal in main process 69935
+Raising signal in execl process 69935
+./exec_inheritance "mask"
+Raising signal in main process 69937
+Signal is pending, 69937
+Raising signal in execl process 69937
+Signal is pending, 69937
+./exec_inheritance "pending"
+Raising signal in main process 69939
+Signal is pending, 69939
+Raising signal in execl process 69939
+Signal is pending, 69939
