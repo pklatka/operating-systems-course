@@ -1,0 +1,48 @@
+===============
+Parameters: h=1e-10, n=1000
+Result: 3.141593
+
+Real time: 5.490000
+User time: 0.000000
+System time: 0.230000
+
+===============
+Parameters: h=1e-07, n=1000
+Result: 3.141732
+
+Real time: 0.310000
+User time: 0.000000
+System time: 0.280000
+
+===============
+Parameters: h=0.0001, n=100
+Result: 3.169434
+
+Real time: 0.000000
+User time: 0.000000
+System time: 0.000000
+
+===============
+Parameters: h=0.0001, n=5
+Result: 3.143160
+
+Real time: 0.000000
+User time: 0.000000
+System time: 0.000000
+
+===============
+Parameters: h=0.0001, n=115
+Result: 3.143259
+
+Real time: 0.020000
+User time: 0.000000
+System time: 0.020000
+
+===============
+Parameters: h=0.0001, n=1150
+Result: 3.251620
+
+Real time: 0.130000
+User time: 0.000000
+System time: 0.120000
+

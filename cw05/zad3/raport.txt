@@ -1,0 +1,47 @@
+===================
+Parameters: h=1e-10, n=1000
+Result: 3.141593
+
+Real time: 37.280000
+User time: 0.000000
+System time: 0.120000
+
+===================
+Parameters: h=1e-07, n=1000
+Result: 3.141732
+
+Real time: 0.860000
+User time: 0.000000
+System time: 0.090000
+
+===================
+Parameters: h=0.0001, n=100
+Result: 3.169434
+
+Real time: 0.080000
+User time: 0.000000
+System time: 0.010000
+
+===================
+Parameters: h=0.001, n=5
+Result: 3.142592
+
+Real time: 0.210000
+User time: 0.000000
+System time: 0.000000
+
+===================
+Parameters: h=0.0001, n=5
+Result: 3.143160
+
+Real time: 0.020000
+User time: 0.000000
+System time: 0.000000
+
+===================
+Parameters: h=0.0001, n=100
+Result: 3.169434
+
+Real time: 0.100000
+User time: 0.000000
+System time: 0.010000
