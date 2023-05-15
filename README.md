@@ -10,5 +10,10 @@ UST. Whole course focused about GNU/Linux programming. Every task is in a separa
 - [lab3](https://github.com/pklatka/operating-systems-course/tree/main/cw03): process creation, enviroment and control
 - [lab4](https://github.com/pklatka/operating-systems-course/tree/main/cw04): signals
 - [lab5](https://github.com/pklatka/operating-systems-course/tree/main/cw05): pipes
+- [lab6](https://github.com/pklatka/operating-systems-course/tree/main/cw06): queues
+- [lab7](https://github.com/pklatka/operating-systems-course/tree/main/cw07): semaphores and shared memory
+- [lab8](https://github.com/pklatka/operating-systems-course/tree/main/cw08): threads
+- [lab9](https://github.com/pklatka/operating-systems-course/tree/main/cw09): mutexes and condition variables
+- [lab10](https://github.com/pklatka/operating-systems-course/tree/main/cw10): sockets
 
 If this repository helped you, don't forget to star ⭐️ or fork🍴.
