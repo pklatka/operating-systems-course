@@ -1,5 +1,7 @@
 #include "common.h"
 
+// NOTE: for unix path use /tmp/<name_of_file>
+
 struct pollfd fds[2 + MAX_CLIENTS];
 char *port;
 char *path;
