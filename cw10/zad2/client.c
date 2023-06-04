@@ -192,6 +192,7 @@ int main(int argc, char *argv[])
         strcpy(addr.sun_path, unixpath);
 
         struct sockaddr_un client_addr;
+        client_addr.sun_family = AF_UNIX;
         strcpy(client_addr.sun_path, client_unixpath);
 
         // Bind to local socket
@@ -259,12 +260,7 @@ int main(int argc, char *argv[])
 
         if (strncmp(command, "STOP", 4) == 0)
         {
-            if (send(socket_fd, command, strlen(command) + 1, 0) == -1)
-            {
-                printf("Error while sending command\n");
-                exit(1);
-            }
-
+            exit_handler();
             break;
         }
 

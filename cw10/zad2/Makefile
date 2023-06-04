@@ -5,7 +5,7 @@ FILE2 = ./client
 
 compile_server:
 	$(CC) $(CFLAGS) -c  $(FILE1).c 
-	$(CC) $(CFLAGS) -o $(FILE1) $(FILE1).o
+	$(CC) $(CFLAGS) -o $(FILE1) $(FILE1).o -lpthread
 
 compile_client:
 	$(CC) $(CFLAGS) -c  $(FILE2).c 

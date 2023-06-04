@@ -1,5 +1,7 @@
 #include "common.h"
 
+// NOTE: for unix path use /tmp/<name_of_file>
+
 struct pollfd fds[2];
 char *port;
 char *path;
@@ -183,7 +185,7 @@ void handle_message(char *buffer, struct sockaddr_in *cliaddr, int fd_index, soc
             return;
         }
 
-        memcpy(clients[j], cliaddr, sizeof(*cliaddr));
+        memcpy(clients[j], cliaddr, cliaddr_size);
         client_names[j] = calloc(strlen(buffer + 4) + 1, sizeof(char));
         strcpy(client_names[j], buffer + 4);
         client_fds[j] = fd_index;
@@ -204,9 +206,11 @@ void handle_message(char *buffer, struct sockaddr_in *cliaddr, int fd_index, soc
 
     // Find client in clients array
     int client_index = -1;
+
     for (int j = 0; j < MAX_CLIENTS; j++)
     {
-        if (client_fds[j] != -1 && clients[j]->sin_addr.s_addr == cliaddr->sin_addr.s_addr && clients[j]->sin_port == cliaddr->sin_port && clients[j]->sin_family == cliaddr->sin_family)
+        // Compare sockaddr_in structs using memcmp
+        if (client_fds[j] != -1 && memcmp(clients[j], cliaddr, cliaddr_size) == 0)
         {
             client_index = j;
             break;
@@ -224,6 +228,8 @@ void handle_message(char *buffer, struct sockaddr_in *cliaddr, int fd_index, soc
     FILE *log_file = fopen("serverlog.txt", "a");
     fprintf(log_file, "%s Client: %s (id: %d) Request: %s\n", time_str, client_names[client_index], client_index, buffer);
     fclose(log_file);
+
+    printf("Client %d: %s sent message: %s\n", client_index, client_names[client_index], buffer);
 
     if (strncmp(buffer, "PONG", 4) == 0)
     {
@@ -362,7 +368,7 @@ int main(int argc, char *argv[])
     printf("Server listening on port %s...\n", port);
 
     // Initialize ping thread
-    pthread_create(&ping_thread, NULL, ping_clients, NULL);
+    // pthread_create(&ping_thread, NULL, ping_clients, NULL);
 
     while (1)
     {
