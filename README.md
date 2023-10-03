@@ -3,7 +3,7 @@
 This repository consists of solutions for operating systems course at AGH
 UST. Whole course focused about GNU/Linux programming. Every task is in a separate folder. Solutions were written using C language. Each folder contains a task description in Polish.
 
-## Short descriptions of given tasks
+## Tasks
 
 - [lab1](https://github.com/pklatka/operating-systems-course/tree/main/cw01): memory management, libraries, timing functions
 - [lab2](https://github.com/pklatka/operating-systems-course/tree/main/cw02): file system, file operations
