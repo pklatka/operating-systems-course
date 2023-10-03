@@ -1,6 +1,6 @@
 # Operating systems course
 
-This repository consists of solutions for operating systems course at AGH
+This repository contains solutions for operating systems course at AGH
 UST. Whole course focused about GNU/Linux programming. Every task is in a separate folder. Solutions were written using C language. Each folder contains a task description in Polish.
 
 ## Tasks
